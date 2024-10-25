@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Idoso</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Registrar Cuidados de Home Care</h1>
+
+        <!-- Detalhes do idoso -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">Detalhes do Idoso</h4>
+                <p><strong>Nome:</strong> <span id="nome"></span></p>
+                <p><strong>Idade:</strong> <span id="idade"></span></p>
+                <p><strong>Relato:</strong> <span id="relato"></span></p>
+                <p><strong>Observações:</strong> <span id="observacoes"></span></p>
+            </div>
+        </div>
+
+        <!-- Formulário para registrar cuidados -->
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Registrar Cuidados de Home Care</h4>
+                <form id="cuidados-form">
+                    <div class="form-group">
+                        <label for="anamnese">Anamnese</label>
+                        <textarea id="anamnese" class="form-control" rows="3" placeholder="Descreva a anamnese"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="data-assistencia">Data da Assistência</label>
+                        <input type="date" id="data-assistencia" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="nome-cuidador">Nome do Cuidador</label>
+                        <input type="text" id="nome-cuidador" class="form-control" placeholder="Nome do cuidador">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="horario-inicio">Horário de Início</label>
+                            <input type="time" id="horario-inicio" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="horario-fim">Horário de Fim</label>
+                            <input type="time" id="horario-fim" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="observacoes">Observações do dia do idoso</label>
+                        <textarea id="observacoes" class="form-control" rows="3" placeholder="Descreva as observações do dia"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Salvar Cuidados</button>
+                    <div id="resultado" class="mt-3"></div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Botões para consultar cuidados e voltar para lista de idosos -->
+        <div class="mt-4 text-center">
+            <a href="buscar-cuidados.html" class="btn btn-info mr-2">Consultar Cuidados</a>
+            <a href="consulta.html" class="btn btn-secondary">Voltar para Idosos Cadastrados</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS + JS puro -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/detalhes-idoso.js"></script> <!-- Script para carregar detalhes e registrar cuidados -->
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDS CARECONNECT</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">RDS CARECONNECT</h1>
+        <div class="text-center">
+            <!-- Inserindo a imagem -->
+            <img src="images/logo.png" alt="Logo RDS CARECONNECT" class="mb-4" style="max-width: 200px;">
+        </div>
+        <div class="text-center mb-4">
+            <p style="font-size: 1.5em;">Bem-vindo! Escolha uma das opções abaixo para acessar:</p>
+        </div>
+        
+        <!-- Identificação de menu conforme o usuário -->
+        <div class="d-flex justify-content-center flex-wrap mt-5">
+            <!-- Menu para usuários gerais -->
+            <button onclick="window.location.href='consulta.html';" class="btn btn-primary m-2">
+                Consultar Idosos
+            </button>
+            <button onclick="window.location.href='cadastro.html';" class="btn btn-success m-2">
+                Cadastrar Novo Idoso
+            </button>
+            
+            <!-- Menu para usuários com acesso a cuidados -->
+            <button onclick="window.location.href='buscar-cuidados.html';" class="btn btn-info m-2">
+                Buscar Cuidados
+            </button>
+            <button onclick="window.location.href='detalhes-idoso.html';" class="btn btn-warning m-2">
+                Detalhes do Idoso
+            </button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/central.js"></script>
+</body>
+</html>
